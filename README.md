@@ -33,6 +33,9 @@ To polyfill fetch in the global scope, you'll have to do the following in your a
 ```ts
 import fetch from 'node-fetch';
 global.fetch = fetch;
+
+// only import the package _after_
+import PackageThatUsesFetch from 'package-that-uses-fetch';
 ```
 
 - browser:
@@ -40,4 +43,7 @@ global.fetch = fetch;
 ```ts
 // browser
 import 'whatwg-fetch';
+
+// only import the package _after_
+import PackageThatUsesFetch from 'package-that-uses-fetch';
 ```
