@@ -10,11 +10,16 @@ Here's a brief definition of a [polyfill](https://developer.mozilla.org/en-US/do
 
 > A polyfill is a piece of code (usually JavaScript on the Web) used to provide modern functionality on older environments that do not natively support it.
 
-
 In the case of `fetch`, this will primarily be:
 
 - Browsers: Opera Mini & IE
 - Server: Node v17 or lower
+
+Therefore, if you fit one of the following scenarios:
+- plan on using the package in a webapp and have data indicating that your users might be on these older browsers
+- plan on using the package in a Node.js <= v17 server 
+
+then you might want to keep reading. Otherwise, you don't need to do anything.
 
 ## Polyfills
 
