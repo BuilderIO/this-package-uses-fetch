@@ -40,7 +40,7 @@ import fetch from 'node-fetch';
 global.fetch = fetch;
 
 // only import the package _after_
-import PackageThatUsesFetch from 'package-that-uses-fetch';
+import packageThatUsesFetch from 'package-that-uses-fetch';
 ```
 
 - browser:
@@ -50,5 +50,8 @@ import PackageThatUsesFetch from 'package-that-uses-fetch';
 import 'whatwg-fetch';
 
 // only import the package _after_
-import PackageThatUsesFetch from 'package-that-uses-fetch';
+import packageThatUsesFetch from 'package-that-uses-fetch';
 ```
+
+
+From then on, you're free to use the package as you see fit.
