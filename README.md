@@ -16,10 +16,10 @@ In the case of `fetch`, this will primarily be:
 - Server: Node v17 or lower
 
 Therefore, if you fit one of the following scenarios:
-- plan on using the package in a webapp and have data indicating that your users might be on these older browsers
-- plan on using the package in a Node.js <= v17 server 
+- plan on using the package in a webapp, and you have data that indicates that your users might be on these older browsers (e.g. by importing your analytics into https://caniuse.com/ciu/import)
+- plan on using the package in a Node.js server that's on v17 or below 
 
-then you might want to keep reading. Otherwise, you don't need to do anything.
+then you might want to keep reading. Otherwise, you don't need to do anything!
 
 ## Polyfills
 
